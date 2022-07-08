@@ -1,0 +1,1039 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.3rem;
+    font-family: 'Jost', sans-serif;
+}
+:root{
+    --white:#fff;
+    --black:#111;
+    --aqua: aqua;
+    --hot-yellow: #D6B56E;
+    --light-blue: #2EB5AA;
+    --light-color: #242E3F;
+    --light-orange: #D29530;
+    --gray: gray;
+    --border: 1px solid var(--hot-yellow);
+    --box-shadow: 2px 3px 9px var(--white);
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.1rem;
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--hot-yellow);
+    color: var(--white);
+    letter-spacing: .1rem;
+    font-size: .7rem;
+    font-weight: 600;
+}
+.box{
+    padding: .5rem 1.5rem;
+}
+.single-line{
+    width: 150px;
+    height: 2px;
+    background-color: var(--hot-yellow);
+}
+ul{
+  list-style-type: none;
+}
+ul li{
+  font-size: .9rem;
+  margin-top: 1rem;
+}
+
+.header-section{
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: var(--white);
+}
+.header-section.active{
+  background: var(--light-color);
+  color: var(--white);
+  z-index: 999;
+}
+.header-section.active a{
+  color: var(--white);
+}
+.head-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.head-nav .logo img{
+    width: 100px;
+    height: 50px;
+    color: var(--black);
+    padding-top: 1rem;
+}
+
+.head-nav .logo .sencond-logo{
+    display: none;
+}
+.nav-bar{
+    padding-top: 1rem;
+    width: 100%;
+}
+.nav-bar a{
+    padding-left: .4rem;
+    font-size: 1.1rem;
+}
+.nav-bar a:hover{
+    color: var(--hot-yellow);
+}
+#nav-btn{
+    display: none;
+}
+
+/* hero secton design here  */
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+.hero-content{
+    padding: 6rem 0px;
+}
+.hero-content h4{
+    color: var(--hot-yellow);
+    font-size: 1.5rem;
+}
+.hero-content h1{
+    font-size: 3.1rem;
+    margin-bottom: 2rem;
+}
+.hero-content p{
+    font-size: .9rem;
+    margin-bottom: 2rem;
+
+}
+
+.hero-service{
+    width: 100%;
+}
+.box-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    text-align: center;
+}
+.box-item{
+    padding: 2rem .8rem;
+    background: var(--hot-yellow);
+    color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+.box-item .icon i{
+    font-size: 1.6rem;
+}
+.box-item .box-content h2{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.box-item .box-content p{
+    font-size: .9rem;
+}
+
+/* about section design  */
+.about{
+    width: 100%;
+    padding: 3rem 1.5rem;
+}
+.about .about-content h4{
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--hot-yellow);
+}
+.about .about-content h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--black);
+}
+.about .about-content{
+    margin-bottom: 2rem;
+}
+.about .about-content p{
+    font-size: .9rem;
+    color: var(--gray);
+}
+
+/* practice area section design  */
+.practice-area{
+    width: 100%;
+    background-color: var(--light-color);
+    color: var(--white);
+}
+.practice-content{
+    padding-top: 6rem;
+}
+.practice-content h1{
+    font-size: 2.4rem;
+}
+.practice-content .single-line{
+    margin-bottom: 1.7rem;
+    font-weight: bold;
+}
+
+.practice-content p{
+    font-size:1rem;
+}
+.practice-area .practice-list{
+    padding: 2rem 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: .5rem;
+}
+.practice-area .practice-list .item{
+    display: flex;
+    flex-direction: row;
+    background: #2F3949;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    height: 70px;
+}
+.practice-area .practice-list .item .icon i{
+    color: var(--hot-yellow);
+    margin-right: 2rem;
+    font-size: 2.3rem;
+}
+/* what we did section design */
+.what-did{
+    width: 100%;
+    background-image: url(image/14.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+.what-did-content{
+    width: 400px;
+    padding: 4rem 1.5rem;
+}
+.what-did-content h4{
+    font-size: .9rem;
+    color: var(--hot-yellow);
+}
+.what-did-content h1{
+    font-size: 2.5rem;
+
+}
+.what-did-content .single-line{
+    width: 100px;
+    margin-bottom: 3rem;
+}
+.what-did-content P{
+    font-size: .9rem;
+    line-height: 2.3rem;
+}
+.what-did-content .count-timer{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 1rem;
+}
+.what-did-content .count-timer h1{
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+.what-did-content .count-timer P{
+    color: var(--hot-yellow);
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: .9rem;
+    margin-top: 0px;
+}
+
+/* team section design here */
+.team{
+    width: 100%;
+}
+.team .team-box{
+    padding: 5rem 1.5rem;
+}
+ .team-head{
+
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+ .team-head h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.team-head .single-line{
+    width: 100px;
+    margin-left: 40%;
+}
+.team-body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+.team-body .team-content{
+    text-align: center;
+} 
+.team-body .image img{
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    margin-bottom: 2rem;
+}
+.team-body .image img:hover{
+    transform: scale(1.1);
+}
+.team-body .image {
+    overflow: hidden;
+    position: relative;
+    height: 350px;
+    width: 350px;
+    margin-left: 3rem;
+}
+.team-body .image .icon{
+    position: absolute;
+    top: 15rem;
+    left: 22%;
+    background-color: var(--hot-yellow);
+    color: var(--white);
+    padding: .3rem;
+}
+.team-body .image .icon i{
+    margin-right: .5rem;
+    transition: .3s;
+
+}
+.team-body .image .icon i:hover{
+    transform: scale(1.01);
+}
+
+.team-body .team-content .img-text h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.team-body .team-content .img-text p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+/* expereince seciton design  */
+.experience-section{
+    width: 100%;
+    background: var(--light-color);
+    color: var(--white);
+}
+.experience-section .box{
+    padding: 5rem 1.5rem;
+}
+.experience-section .expereance{
+    text-align: center;
+    padding: 3rem 0px;
+    border: var(--border);
+}
+.experience-section .expereance h1{
+    font-size: 9.9rem;
+    margin-bottom: 0px;
+}
+.experience-section .expereance p{
+    font-size: .9rem;
+    margin-top: 0px;
+    color: var(--hot-yellow);
+}
+.experience-section .welcome{
+    padding: 2rem 0px;
+}
+.experience-section .welcome h4{
+    font-size: .9rem;
+    color: var(--hot-yellow);
+}
+.experience-section .welcome h1{
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+.experience-section .pera{
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    padding-top: 2rem;
+}
+
+/* testimonial section design here */
+.testimonial{
+    width: 100%;
+    background-image: url(image/testimonial-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.testimonial-box{
+    padding: 4rem 1.5rem;
+}
+.testimonial-box .team-head{
+  color: var(--white);
+}
+.testimonial-body .item .test-card{
+    color: var(--black);
+    background: var(--white);
+    margin-bottom: 1rem;
+    padding: 2rem 1.5rem;
+}
+.testimonial-body .item .test-card i{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--hot-yellow);
+}
+.testimonial-body .item .test-card h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.testimonial-body .item .test-card p{
+    font-size: .9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.9rem;
+}
+.testimonial-body .item .test-card span{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--hot-yellow);
+}
+
+/* footer section design here  */
+.footer-section{
+  width: 100%;
+  background: var(--light-color);
+  color: var(--white);
+}
+.footer-section .footer-top{
+  padding: 5rem 0px;
+}
+.footer-top .footer-content img{
+  width: 200px;
+  margin-bottom: 1rem;
+}
+.footer-content ul li i{
+  margin-right: 1.5rem;
+  color: var(--hot-yellow);
+}
+.footer-content ul li a{
+  color: var(--white);
+  transition: .3s;
+}
+.footer-content ul li a:hover{
+  color: var(--hot-yellow);
+}
+.footer-content h4{
+  text-transform: capitalize;
+  color: var(--hot-yellow);
+  font-size: 1.2rem;
+}
+.footer-content p{
+  font-size: 1.1rem;
+}
+.footer-content p.sml{
+  font-size: .8rem;
+}
+.footer-content form .input-box{
+  display: flex;
+  width: 80%;
+}
+.footer-content form .input-box input{
+  background-color: #2b3b57;
+  border: none;
+  outline: none;
+  padding: .4rem;
+  transition: .3s;
+  flex-basis: 80%;
+}
+.footer-content form .input-box input:focus{
+  background-color: var(--white);
+  border: none;
+  outline: none;
+}
+.footer-content form .input-box button{
+  border: none;
+  outline: none;
+  flex-basis: 100px;
+  background: var(--hot-yellow);
+  color: var(--white);
+}
+.footer-content form .input-box button i{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:space-between;
+
+}
+.footer-bottom p{
+  font-size: .9rem;
+}
+.footer-bottom .f-icon i{
+  padding: .2rem;
+  transition: .3s;
+   color: var(--hot-yellow);
+}
+.footer-bottom .f-icon i:hover{
+  color: var(--white);
+}
+
+
+@media screen and (max-width: 575px) {
+    .head-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+    .head-nav .logo img{
+        width: 150px;
+        height: 50px;
+        color: var(--black);
+        padding-top: 1rem;
+    }
+    .head-nav .logo .sencond-logo{
+        display: none;
+    }
+    .nav-bar.active{
+        display: block;
+        transition: .3s;
+    }
+    .nav-bar{
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 99%;
+        left: 0px;
+        background: #fff;
+        text-align: center;
+
+    }
+    .nav-bar a{
+        display: block;
+        padding: 1rem;
+    }
+    .header-section.active a{
+      color: var(--black);
+    }
+     #nav-btn{
+        display: block;
+        margin-top: 1rem;
+        padding: .2rem;
+    }
+}
+@media screen and (min-width: 576px){
+  .header-section{
+    width: 100%;
+    height: 100px;
+}
+  .head-nav{
+    display: flex;
+    justify-content: space-between;  
+  }
+  .nav-bar{
+  padding-top: 1rem;
+    width: 53%;
+  }
+  .nav-bar a{
+    padding-left: .2rem;
+    font-size: 1.3rem;
+  }
+  .head-nav .logo img{
+      width: 150px;
+      height: 50px;
+      padding-top: 1rem;
+  }
+  .hero-content{
+    padding: 8rem 2.5rem;
+}
+.hero-content h4{
+    color: var(--hot-yellow);
+    font-size: 1.5rem;
+}
+.hero-content h1{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+.hero-content p{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+
+}
+  .hero-btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--hot-yellow);
+    color: var(--white);
+    letter-spacing: .1rem;
+    font-size: .9rem;
+    font-weight: 600;
+  }
+  .box-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    text-align: center;
+  }
+
+  .box-item .icon i{
+      font-size: 1.9rem;
+  }
+  .box-item .box-content h2{
+      text-transform: capitalize;
+      font-size: 1.8rem;
+  }
+  .box-item .box-content p{
+      font-size: 1.1rem;
+  }
+  .about{
+    width: 100%;
+    padding: 6rem 2.5rem;
+  }
+  .what-did-content{
+    width: 600px;
+    padding: 8rem 2.5rem;
+  }
+  .what-did-content h4{
+    font-size: 1.7rem;
+    color: var(--hot-yellow);
+  }
+  .what-did-content h1{
+    font-size: 2.9rem;
+
+  }
+  .what-did-content .single-line{
+    width: 100px;
+    margin-bottom: 3rem;
+  }
+  .what-did-content P{
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+  .what-did-content .count-timer{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 1rem;
+  }
+  .what-did-content .count-timer h1{
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+  }
+  .what-did-content .count-timer P{
+    color: var(--hot-yellow);
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-top: 0px;
+  }
+  .team-body .team-content {
+    text-align: center;
+    /* width: 300px; */
+    margin-left: 4rem;
+}
+  .img-text {
+    width: 300px;
+    margin-left: 3rem;
+  }
+    /* .team-body .image {
+      overflow: hidden;
+      position: relative;
+      height: 350px;
+      width: 350px;
+      margin-left: 5rem;
+  }
+  .team-body .image .icon{
+      position: absolute;
+      top: 15rem;
+      left: 22%;
+      background-color: var(--hot-yellow);
+      color: var(--white);
+      padding: .3rem;
+  } */
+  .experience-section .pera {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 768px){
+  .head-nav .logo img{
+    width: 200px;
+    height: 70px;
+    padding-top: 1rem;
+}
+  .nav-bar{
+    padding-top: 1rem;
+      width: 42%;
+  }
+  .nav-bar a{
+    padding-left: .3rem;
+    font-size: 1.4rem;
+  }
+.hero-content h1{
+    font-size: 3.9rem;
+    margin-bottom: 2rem;
+}
+.hero-content p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+  .hero-btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--hot-yellow);
+    color: var(--white);
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .practice-content {
+    padding-top: 20rem;
+  }
+  .team-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+  }
+  .team-body .team-content {
+    text-align: center;
+    /* width: 300px; */
+    margin-left: 0rem;
+  }
+  .footer-content form .input-box button {
+    border: none;
+    outline: none;
+    flex-basis: 100px;
+    background: var(--hot-yellow);
+    color: var(--white);
+    padding: 0px 1rem;
+  }
+}
+@media screen and (min-width: 992px){
+  .head-nav .logo img{
+    width: 250px;
+    height: 70px;
+    padding-top: 1rem;
+  }
+  .nav-bar{
+    padding-top: 1rem;
+      width: 36%;
+  }
+  .nav-bar a{
+    padding-left: .5rem;
+    font-size: 1.4rem;
+  }
+  .box-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    text-align: center;
+  }
+  .practice-content {
+    padding-top: 7rem;
+  }
+  .box {
+    padding: 0.5rem 3.5rem;
+  }
+  .about.box{
+    padding: 7.5rem 3.5rem;
+  }
+  .what-did-content {
+    width: 837px;
+    padding: 8rem 5.5rem;
+  }
+  .team-head .single-line {
+    width: 100px;
+    margin-left: 45%;
+  }
+  .footer-bottom p {
+    font-size: 1.5rem;
+  }
+  .footer-bottom .f-icon i {
+    padding: 0.2rem;
+    transition: .3s;
+    color: var(--hot-yellow);
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 1200px){
+  .head-nav .logo img{
+    width: 250px;
+    height: 70px;
+    padding-top: 1rem;
+  }
+  .nav-bar{
+    padding-top: 1rem;
+      width: 38%;
+  }
+  .nav-bar a{
+    padding-left: .5rem;
+    font-size: 1.9rem;
+  }
+}
+
+
+
+/* some countable animation design here for what we did section */
+.span{
+    font-size: 2.5rem;
+}
+.count-item h1{
+    display: inline;
+}
+/* first item count animation here  */
+.first::after {
+    font: 500 40px system-ui;
+    content: counter(count);
+    animation: counter1 2s linear  forwards;
+    counter-reset: count 0;
+  }
+  
+  @keyframes counter1 {
+    0% {
+      counter-increment: count 0;
+    }
+    10% {
+      counter-increment: count 100;
+    }
+    20% {
+      counter-increment: count 200;
+    }
+    30% {
+      counter-increment: count 355;
+    }
+    40% {
+      counter-increment: count 856;
+    }
+    45% {
+      counter-increment: count 912;
+    }
+    50% {
+      counter-increment: count 1000;
+    }
+    55% {
+      counter-increment: count 1256;
+    }
+    60% {
+      counter-increment: count 1500;
+    }
+    60% {
+      counter-increment: count 2051;
+    }
+    65% {
+      counter-increment: count 2500;
+    }
+    70% {
+      counter-increment: count 3505;
+    }
+    75% {
+      counter-increment: count 3500;
+    }
+    80% {
+      counter-increment: count 4000;
+    }
+    90% {
+      counter-increment: count 4255;
+    }
+    100% {
+      counter-increment: count 4500;
+    }
+  } 
+  
+/* second item count animation here  */
+
+.second::after {
+    font: 500 40px system-ui;
+    content: counter(count);
+    animation: counter2 2s linear  forwards;
+    counter-reset: count 0;
+  }
+  
+  @keyframes counter2 {
+    0% {
+      counter-increment: count 0;
+    }
+    10% {
+      counter-increment: count 5;
+    }
+    30% {
+      counter-increment: count 8;
+    }
+    50% {
+      counter-increment: count 10;
+    }
+    70% {
+      counter-increment: count 13;
+    }
+    80% {
+      counter-increment: count 15;
+    }
+    100% {
+      counter-increment: count 16;
+    }
+  } 
+  
+  /*   third   item count animation here  */
+
+.third::after {
+    font: 500 40px system-ui;
+    content: counter(count);
+    animation: counter3 2s linear  forwards;
+    counter-reset: count 0;
+  }
+  
+  @keyframes counter3 {
+    0% {
+      counter-increment: count 1;
+    }
+    10% {
+      counter-increment: count 3;
+    }
+    30% {
+      counter-increment: count 5;
+    }
+    50% {
+      counter-increment: count 8;
+    }
+    70% {
+      counter-increment: count 10;
+    }
+    80% {
+      counter-increment: count 12;
+    }
+    100% {
+      counter-increment: count 14;
+    }
+  } 
+ 
+  /* fiveth item count animation here  */
+
+  .fiveth::after {
+    font: 500 40px system-ui;
+    content: counter(count);
+    animation: counter4 2s linear  forwards;
+    counter-reset: count 0;
+  }
+  
+  @keyframes counter4 {
+    0% {
+      counter-increment: count 11;
+    }
+    10% {
+      counter-increment: count 15;
+    }
+    30% {
+      counter-increment: count 26;
+    }
+    50% {
+      counter-increment: count 38;
+    }
+    70% {
+      counter-increment: count 42;
+    }
+    80% {
+      counter-increment: count 47;
+    }
+    100% {
+      counter-increment: count 52;
+    }
+  } 
+
+  /* sixth item count animation here  */
+
+  .sixth::after {
+    font: 500 40px system-ui;
+    content: counter(count);
+    animation: counter5 2s linear  forwards;
+    counter-reset: count 0;
+  }
+  
+  @keyframes counter5 {
+    0% {
+      counter-increment: count 10;
+    }
+    10% {
+      counter-increment: count 15;
+    }
+    30% {
+      counter-increment: count 39;
+    }
+    50% {
+      counter-increment: count 45;
+    }
+    70% {
+      counter-increment: count 59;
+    }
+    80% {
+      counter-increment: count 62;
+    }
+    85% {
+      counter-increment: count 84;
+    }
+    90% {
+      counter-increment: count 91;
+    }
+    95% {
+      counter-increment: count 98;
+    }
+    100% {
+      counter-increment: count 100;
+    }
+  }
+  /* seventh item count animation here  */
+
+  .seventh::after {
+    font: 500 40px system-ui;
+    content: counter(count);
+    animation: counter6 2s linear  forwards;
+    counter-reset: count 0;
+  }
+  
+  @keyframes counter6 {
+    0% {
+      counter-increment: count 0;
+    }
+    10% {
+      counter-increment: count .5;
+    }
+    30% {
+      counter-increment: count 1;
+    }
+    50% {
+      counter-increment: count 1.1;
+    }
+    70% {
+      counter-increment: count 1.5;
+    }
+    80% {
+      counter-increment: count 1.8;
+    }
+    100% {
+      counter-increment: count 2;
+    }
+  }
+
+
+
+
+
